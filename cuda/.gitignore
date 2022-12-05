@@ -1,7 +1,0 @@
-*.swp
-opencv/*
-outputs/*
-*.o
-ipcv-cuda-debug
-data/*
-venv/*

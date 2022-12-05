@@ -8,3 +8,4 @@ do.sh
 ImageTranscription/inkpath.so
 ImageTranscription/ipcvobj.so
 *.gch
+venv/*
