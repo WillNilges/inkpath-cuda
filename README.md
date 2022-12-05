@@ -1,11 +1,11 @@
-# THIS IS SO, SO EXPERIMENTAL JESUS LORD PLEASE DON'T USE THIS
+# THIS IS SO, SO EXPERIMENTAL. PROCEED AT YOUR OWN PERIL.
 
 An implementation of Otsu thresholding and OpenCV's Adaptive Thresholding, parallelized in CUDA.
 
 ## Usage
 The most reliable way to install this is probably through Podman. Ensure you have Podman installed, as well as the [Nvidia Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#installation-guide).
 
-You'll want to use the best base image for your system. For me, that's docker.io/nvidia/cuda:11.4.1-cudnn8-devel-ubuntu20.04, because I have a Tela K80, but your mileage may vary. On newer GPU's, I've had success with 11.8.0-cudnn8-devel-ubuntu22.04.
+You'll want to use the best base image for your system. For me, that's docker.io/nvidia/cuda:11.4.1-cudnn8-devel-ubuntu20.04, because I have a Tesla K80, but your mileage may vary. On newer GPUs like the P4 or GTX 1050Ti, I've had success with 11.8.0-cudnn8-devel-ubuntu22.04.
 
 You should also make sure that the compute capability version you compile everything (both OpenCV and this project) with matches that of your GPU. You can specify that in the Dockerfile, `build_opencv.sh`, and the Makefile.
 
